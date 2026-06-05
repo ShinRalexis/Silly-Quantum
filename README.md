@@ -5,7 +5,7 @@
 > **An experiment in applying quantum circuit simulation to narrative roleplay.**
 > Silly Quantum started as a personal project to explore whether quantum circuit mathematics could produce more interesting emotional state transitions than a standard random number generator. It uses QuantumA Core, a classical simulator of quantum circuits, to compute character states from real circuit math. No actual quantum hardware is involved.
 >
-> Two things make it more interesting than a plain random picker. First, conversation keywords are translated into RY rotation angles before the circuit runs: the narrative context literally deforms the probability landscape of the circuit before the math takes over. Second, CNOT entanglement gates couple qubit pairs, so the 6 output bits are not independent coin flips — the circuit geometry creates correlations between emotional dimensions that a flat random function cannot reproduce.
+> Two things make it more interesting than a plain random picker. First, conversation keywords are translated into RY rotation angles before the circuit runs: the narrative context literally deforms the probability landscape of the circuit before the math takes over. Second, CNOT entanglement gates couple qubit pairs, so the 6 output bits are not independent coin flips: the circuit geometry creates correlations between emotional dimensions that a flat random function cannot reproduce.
 
 [![Version](https://img.shields.io/badge/version-1.6.4-blue)](https://github.com/ShinRalexis/Silly-Quantum/releases)
 [![SillyTavern](https://img.shields.io/badge/SillyTavern-compatible-green)](https://github.com/SillyTavern/SillyTavern)
