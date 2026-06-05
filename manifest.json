@@ -1,0 +1,10 @@
+{
+    "name": "silly-quantum",
+    "display_name": "Silly Quantum",
+    "version": "1.6.4",
+    "description": "Motore di entropia quantistica per roleplay avanzato.",
+    "author": "Antigravity",
+    "js": "index.js?v=20260601g",
+    "css": "style.css",
+    "settings_html": "settings.html"
+}

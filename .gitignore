@@ -1,0 +1,7 @@
+.claude/
+DEVNOTES.md
+QUANTUM_CORE_PROTOCOL.md
+CLAUDE_HANDOFF.md
+ANTIGRAVITY_HANDOFF.md
+backups/
+*.log

@@ -1,0 +1,171 @@
+<div id="silly-quantum-settings" class="inline-drawer">
+    <div class="inline-drawer-toggle inline-drawer-header">
+        <b>⚛️ Silly Quantum Hub</b>
+        <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+    </div>
+    <div class="inline-drawer-content">
+        <div class="sq-container">
+            <!-- LANGUAGE SELECTOR -->
+            <div class="setup-item">
+                <label data-sq-i18n="ui_language">Lingua Interfaccia:</label>
+                <select id="sq_language" class="text_pole" title="Lingua Interfaccia">
+                    <option value="it" selected>Italiano</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="ja">日本語</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
+
+            <!-- GENERAL & CONNECTION -->
+            <div class="setup-item">
+                <label for="sq_enabled" data-sq-i18n="enable_engine">Abilita Motore Quantistico:</label>
+                <input type="checkbox" id="sq_enabled">
+            </div>
+            <div class="setup-item">
+                <div class="sq-api-badge">
+                    <i id="sq_api_status_icon" class="fa-solid fa-circle sq-status-disconnected"></i>
+                    <span id="sq_api_status_text">QuantumA Core: Offline</span>
+                </div>
+                <button id="sq_api_check" class="menu_button sq-btn-compact" data-sq-i18n="verify_btn">Verifica</button>
+            </div>
+
+            <div class="setup-item">
+                <label for="sq_drift_mode" data-sq-i18n="quantum_drift">Quantum Drift (Collasso da Osservazione):</label>
+                <select id="sq_drift_mode" class="text_pole" title="Quantum Drift Mode">
+                    <option value="contextual" selected data-sq-i18n="drift_contextual">Contestuale</option>
+                    <option value="always" data-sq-i18n="drift_always">Sempre Attivo</option>
+                    <option value="disabled" data-sq-i18n="drift_disabled">Disattivato</option>
+                </select>
+            </div>
+
+            <!-- SECTION: MOOD MANAGEMENT -->
+            <div class="sq-section">
+                <div class="sq-section-header">
+                    <i class="fa-solid fa-brain"></i> <span data-sq-i18n="mood_management">Gestione dell'Umore Quantistico</span>
+                </div>
+                <div class="setup-item">
+                    <label for="sq_mood" data-sq-i18n="mood_injection">Iniezione Umore Quantistico:</label>
+                    <input type="checkbox" id="sq_mood" checked>
+                </div>
+                <div class="setup-item">
+                    <label data-sq-i18n="qubit_complexity">Complessità Qubit:</label>
+                    <select id="sq_qubits" class="text_pole" title="Complessità Qubit">
+                        <option value="2" data-sq-i18n="2q_4s">2 Qubits (4 stati)</option>
+                        <option value="3" data-sq-i18n="3q_8s">3 Qubits (8 stati)</option>
+                        <option value="4" data-sq-i18n="4q_16s">4 Qubits (16 stati)</option>
+                        <option value="6" selected data-sq-i18n="6q_64s">6 Qubits (64 stati)</option>
+                    </select>
+                </div>
+                <div class="setup-item">
+                    <label data-sq-i18n="hardware_profile">Profilo Quantistico:</label>
+                    <select id="sq_hardware_profile" class="text_pole" title="Profilo Quantistico">
+                        <option value="auto" selected data-sq-i18n="hw_auto">Auto (dalla descrizione)</option>
+                        <option value="superconducting" data-sq-i18n="hw_superconducting">Normale (Superconducting)</option>
+                        <option value="silicon_spin" data-sq-i18n="hw_silicon_spin">Analitico (Silicon Spin)</option>
+                        <option value="trapped_ion" data-sq-i18n="hw_trapped_ion">Impulsivo (Trapped Ion)</option>
+                        <option value="neutral_atom" data-sq-i18n="hw_neutral_atom">Caotico (Neutral Atom)</option>
+                    </select>
+                </div>
+                <div class="setup-item">
+                    <label for="sq_noisy_mind" data-sq-i18n="noisy_mind">Mente Offuscata (Rumore Quantistico):</label>
+                    <input type="checkbox" id="sq_noisy_mind">
+                </div>
+            </div>
+
+            <!-- SECTION: ENTANGLEMENT -->
+            <div class="sq-section">
+                <div class="sq-section-header">
+                    <i class="fa-solid fa-link"></i> <span data-sq-i18n="entanglement_title">Entanglement USER/Personaggio</span>
+                </div>
+                <div class="setup-item">
+                    <label for="sq_entanglement" data-sq-i18n="enable_entanglement">Attiva Connessione Spirituale (Dinamica):</label>
+                    <input type="checkbox" id="sq_entanglement">
+                </div>
+                <div class="setup-item">
+                    <label data-sq-i18n="entanglement_complexity">Complessità Legame (Qubit):</label>
+                    <select id="sq_entanglement_qubits" class="text_pole" title="Complessità Legame">
+                        <option value="2" data-sq-i18n="2q_love_hate">2 Qubits (Amore/Odio)</option>
+                        <option value="3" data-sq-i18n="3q_base">3 Qubits (Sfumature Base)</option>
+                        <option value="4" selected data-sq-i18n="4q_complex">4 Qubits (Legame Complesso)</option>
+                        <option value="6" data-sq-i18n="6q_chaos">6 Qubits (Caos Totale)</option>
+                    </select>
+                </div>
+                <div class="setup-item">
+                    <label for="sq_entanglement_force" data-sq-i18n="entanglement_force">Intensità Legame:</label>
+                    <div class="sq-slider-row">
+                        <input type="range" id="sq_entanglement_force" min="0.1" max="1.0" step="0.1" value="0.5">
+                        <span id="sq_entanglement_force_val" class="sq-slider-val">0.5</span>
+                    </div>
+                </div>
+                <p class="sq-info" data-sq-i18n="entanglement_desc">L'Entanglement evolve in base a Mirroring lessicale e Allineamento emotivo in chat.</p>
+            </div>
+
+            <!-- SECTION: PLOT DEVELOPMENT -->
+            <div class="sq-section">
+                <div class="sq-section-header">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> <span data-sq-i18n="plot_management">Gestione Sviluppo di Trama</span>
+                </div>
+                <div class="sq-button-row">
+                    <button type="button" id="sq_plot_oracle" class="menu_button" data-sq-i18n="consult_oracle">🔮 Consulta Oracolo Trama</button>
+                    <button type="button" id="sq_reset_state" class="menu_button secondary" data-sq-i18n="reset_state">🔄 Reset Stato</button>
+                </div>
+                <div class="setup-item sq-mt">
+                    <label for="sq_hide_oracle_result" data-sq-i18n="oracle_veil">Velo dell'Oracolo (Nascondi risultato):</label>
+                    <input type="checkbox" id="sq_hide_oracle_result">
+                </div>
+                <div class="setup-item">
+                    <label for="sq_multiverse" data-sq-i18n="multiverse">Oracolo Multiverso (16 Universi Paralleli):</label>
+                    <input type="checkbox" id="sq_multiverse">
+                </div>
+                <div class="setup-item">
+                    <label for="sq_grover_oracle" data-sq-i18n="grover_oracle">Oracolo di Grover (Amplificazione del Destino):</label>
+                    <input type="checkbox" id="sq_grover_oracle">
+                </div>
+                <div class="setup-item sq-mt">
+                    <label data-sq-i18n="auto_oracle">Affidarsi al fato (Auto-Oracolo):</label>
+                    <select id="sq_auto_oracle" class="text_pole" title="Auto-Oracolo">
+                        <option value="0" selected data-sq-i18n="none">Nessuna</option>
+                        <option value="5" data-sq-i18n="every_5">Ogni 5 messaggi</option>
+                        <option value="10" data-sq-i18n="every_10">Ogni 10 messaggi</option>
+                        <option value="15" data-sq-i18n="every_15">Ogni 15 messaggi</option>
+                        <option value="20" data-sq-i18n="every_20">Ogni 20 messaggi</option>
+                        <option value="30" data-sq-i18n="every_30">Ogni 30 messaggi</option>
+                        <option value="40" data-sq-i18n="every_40">Ogni 40 messaggi</option>
+                        <option value="50" data-sq-i18n="every_50">Ogni 50 messaggi</option>
+                        <option value="75" data-sq-i18n="every_75">Ogni 75 messaggi</option>
+                        <option value="100" data-sq-i18n="every_100">Ogni 100 messaggi</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- QUANTUM JUDGEMENT -->
+            <div class="sq-section">
+                <div class="sq-section-header">
+                    <i class="fa-solid fa-gavel"></i> <span data-sq-i18n="judgement_title">Giudizio e Risoluzione Azioni</span>
+                </div>
+                <div class="setup-item">
+                    <label for="sq_judgement" data-sq-i18n="enable_judgement">Abilita Motore del Fato:</label>
+                    <input type="checkbox" id="sq_judgement">
+                </div>
+                <div id="sq_judgement_log">
+                    In attesa di azione significativa...
+                </div>
+            </div>
+
+            <!-- QUANTUM STATUS MONITOR -->
+            <div class="sq-status-box">
+                <div class="sq-monitor-header">
+                    <i class="fa-solid fa-microchip"></i> <span data-sq-i18n="monitor_title">Monitor Collasso Quantistico</span>
+                </div>
+                <span id="sq_last_state">In attesa di primo impulso...</span>
+            </div>
+        <div class="sq-support-link">
+            <a href="https://liberapay.com/MetaDarko" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-heart sq-heart-icon"></i> <span data-sq-i18n="support">Sostieni il Progetto Quantum</span>
+            </a>
+        </div>
+    </div>
+</div>

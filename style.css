@@ -1,0 +1,225 @@
+/* Silly Quantum - Native Integration & Section Styling */
+
+#silly-quantum-settings .inline-drawer-header {
+    background: linear-gradient(90deg, #0f4c75, #5c2a9d) !important;
+    color: white !important;
+}
+
+#silly-quantum-settings .sq-container {
+    padding: 12px;
+    background: rgba(10, 15, 25, 0.4);
+}
+
+/* Section Containers */
+#silly-quantum-settings .sq-section {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+#silly-quantum-settings .sq-section-header {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #00ffff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#silly-quantum-settings .sq-info {
+    font-size: 0.8em;
+    color: #888;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+#silly-quantum-settings .setup-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+#silly-quantum-settings .setup-item label {
+    font-size: 0.9em;
+    color: #b0c4de;
+}
+
+#silly-quantum-settings .sq-button-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+/* Custom Buttons */
+#silly-quantum-settings .menu_button {
+    background: #1687a7 !important;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white !important;
+    cursor: pointer;
+    font-size: 0.85em;
+    flex: 1;
+}
+
+#silly-quantum-settings .menu_button.sq-btn-compact {
+    flex: 0 0 auto;
+    width: 100px;
+}
+
+#silly-quantum-settings .menu_button:hover {
+    background: #276678 !important;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+#silly-quantum-settings .sq-api-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85em;
+    color: #b0c4de;
+}
+
+#silly-quantum-settings .sq-status-connected {
+    color: #4ade80;
+    text-shadow: 0 0 8px #4ade80;
+    animation: sq-pulse 2s infinite;
+}
+
+#silly-quantum-settings .sq-status-disconnected {
+    color: #ff6b6b;
+    text-shadow: 0 0 8px #ff6b6b;
+}
+
+@keyframes sq-pulse {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+#silly-quantum-settings .menu_button.secondary {
+    background: #393e46 !important;
+}
+
+/* Status Monitor Box */
+#silly-quantum-settings .sq-status-box {
+    margin-top: 15px;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.7);
+    border-left: 3px solid #00ffff;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.85em;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+#silly-quantum-settings .sq-status-box b {
+    color: #00ffff;
+}
+
+#silly-quantum-settings #sq_last_state span {
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+#silly-quantum-settings .fa-spinner {
+    color: #00ffff;
+    margin-right: 5px;
+}
+
+@keyframes sq-glow {
+    0% { text-shadow: 0 0 5px #4ade80; }
+    50% { text-shadow: 0 0 15px #4ade80; }
+    100% { text-shadow: 0 0 5px #4ade80; }
+}
+
+.sq-bitstring-active {
+    animation: sq-glow 1.5s infinite;
+    font-weight: bold;
+}
+
+#sq_judgement_log {
+    font-size: 0.8em;
+    color: #888;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 5px;
+    min-height: 20px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+#silly-quantum-settings .sq-mt {
+    margin-top: 10px;
+}
+
+#silly-quantum-settings .sq-monitor-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+#silly-quantum-settings .sq-support-link {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+#silly-quantum-settings .sq-support-link a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+#silly-quantum-settings .sq-heart-icon {
+    color: #ff6b6b;
+    margin-right: 5px;
+}
+
+.sq-judgement-success {
+    color: #4ade80 !important;
+    text-shadow: 0 0 5px rgba(74, 222, 128, 0.5);
+}
+
+.sq-judgement-fail {
+    color: #ff6b6b !important;
+    text-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+}
+
+.sq-judgement-partial {
+    color: #ffcc00 !important;
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+#silly-quantum-settings .sq-slider-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#silly-quantum-settings .sq-slider-row input[type="range"] {
+    flex: 1;
+    accent-color: #00ffff;
+}
+
+#silly-quantum-settings .sq-slider-val {
+    font-size: 0.85em;
+    color: #00ffff;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 2.5em;
+    text-align: right;
+}
