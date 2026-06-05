@@ -2,8 +2,8 @@
 
 # Silly Quantum
 
-> **Real quantum entropy for SillyTavern characters.**
-> Silly Quantum drives your AI character's emotional state with actual quantum circuit simulations: 64 possible states, contextual bias analysis, and narrative injection on every message.
+> **An experiment in applying quantum circuit simulation to narrative roleplay.**
+> Silly Quantum started as a personal project to explore whether quantum circuit mathematics could produce more interesting emotional state transitions than a standard random number generator. It uses QuantumA Core, a classical simulator of quantum circuits, to compute character states from real circuit math. No actual quantum hardware is involved.
 
 [![Version](https://img.shields.io/badge/version-1.6.4-blue)](https://github.com/ShinRalexis/Silly-Quantum/releases)
 [![SillyTavern](https://img.shields.io/badge/SillyTavern-compatible-green)](https://github.com/SillyTavern/SillyTavern)
@@ -14,16 +14,18 @@
 
 ## What it does
 
-Standard roleplay relies on randomness or static mood systems. Silly Quantum replaces that with a real quantum simulation:
+The idea was simple: instead of rolling a plain random number to pick a character mood, run a 6-qubit quantum circuit through a simulator and let the mathematics of superposition and entanglement shape the output. The result is a mood engine with 64 named states where the transitions follow quantum circuit logic rather than uniform randomness.
+
+A note on honesty: the randomness still comes from JavaScript (`Math.random()` seeds the random gate applications). What the quantum simulation adds is the mathematical transformation: context keywords bend the rotation angles, entanglement gates couple qubit pairs, and the dominant state of the resulting superposition becomes the character mood. The simulation is classically exact, not running on real quantum hardware.
 
 - **64 emotional states**: a 6-qubit circuit produces 64 possible bitstrings, each mapped to a named emotional state (Openness, Shadow, Chaos, Focus, and more)
-- **Contextual bias**: the circuit is shaped by the actual content of the last 5 messages — tension, weakness, and strength keywords shift the quantum angles
-- **Narrative injection**: the resulting state is injected directly into the prompt before the LLM generates its response
+- **Contextual bias**: circuit angles are shaped by the last 5 messages, tension and strength keywords shift the quantum rotations
+- **Narrative injection**: the resulting state is injected into the prompt before the LLM generates its response
 - **Persistent state**: each character's quantum state persists across messages and sessions via browser localStorage
-- **Fate Engine**: tracks narrative arcs and fires Judgement events (challenges with quantum-determined outcomes)
+- **Fate Engine**: tracks narrative arcs and fires Judgement events with quantum-determined outcomes
 - **Oracle**: generates plot twists using Grover search or Multiverse (Monte Carlo) mode
 - **Entanglement**: synchronizes emotional states between two characters with configurable coupling force
-- **Quantum Drift**: simulates temporal decay — if a character has not been active for more than 30 minutes, their state drifts proportionally to the time elapsed
+- **Quantum Drift**: if a character has not been active for more than 30 minutes, their state drifts proportionally to the time elapsed
 
 ---
 
